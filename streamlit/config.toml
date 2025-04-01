@@ -1,2 +1,8 @@
 [theme]
 base="light"
+primaryColor = "#2e7d32"
+backgroundColor = "#e8f5e9"
+textColor = "#000000"
+
+[theme.sidebar]
+textColor = "#FFFFFF"  # White text in the sidebar
