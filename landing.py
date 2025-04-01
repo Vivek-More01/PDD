@@ -66,7 +66,7 @@ st.markdown(
     """
     <style>
     [data-testid="stSidebarNav"] {
-        display: None;
+        display: none;
     }
     </style>
     """,
@@ -87,12 +87,23 @@ st.sidebar.markdown("""
     .stSidebar .st-radio label:hover {
         color: #000000;  /* Green color on hover */
     }
-    /* Change the color of text inside radio buttons */
-    div[data-testid="stMarkdownContainer"] p {
-        color: #FFFFFF; /* Set the color to Tomato (or any color you want) */
-        font-weight: bold; /* Optional: Make the text bold */
-    }
 
+    div[data-testid="stRadio"]
+  div[data-testid="stMarkdownContainer"]
+    p {
+    color: white !important; /* Set the text color to black */
+    font-size: 18px !important; /* Adjust the font size */
+    font-weight: bold !important; /* Make the text bold */
+    padding: 5px !important; /* Optional: Adjust padding for better readability */
+}
+
+    div[data-testid="stSelectbox"] label[data-testid="stWidgetLabel"] div[data-testid="stMarkdownContainer"] p {
+        color: white; /* Set the text color to black */
+        font-size: 18px; /* Adjust the font size */
+        font-weight: bold; /* Make the text bold */
+        padding: 5px; /* Optional: Adjust padding for better readability */
+    }
+    
     /* Target the radio button input (circle) */
     .stSidebar .st-radio input[type="radio"] {
         accent-color: #FFFFFF;  /* Change the color of the radio button itself */
@@ -102,13 +113,11 @@ st.sidebar.markdown("""
         background-color: #FFD700;  /* Yellow background for checked radio button */
     }
     </style>""", unsafe_allow_html=True)
-pages = st.sidebar.radio("Select a page from the menu.",["Home","Upload Image", "About", "Resources"], index=0, help="Select a page to navigate to")
-if pages == "About":
-    st.switch_page("About")
-elif pages == "Resources":
-    st.switch_page("Resources")
-elif pages == "Upload Image":
-    st.switch_page("detect")
+
+st.sidebar.page_link("detect.py", label="Detect Disease", icon=":material/image_search:")
+st.sidebar.page_link("about.py", label="About Us", icon=":material/groups:")
+st.sidebar.page_link("resources.py", label="Resources & References", icon=":material/library_books:")
+
 chat = client.chats.create(model="gemini-2.0-flash", config= genai.types.GenerateContentConfig(system_instruction="Answer the question about plants in a simple and precise manner", max_output_tokens=1000, temperature=0.05))
 question = st.text_input(label="Ask a question about plants", value="", max_chars=200, key="question", type="default", help="Click to get an answer about questions") 
 try:
@@ -132,8 +141,7 @@ st.markdown("<p class='description'>This app uses a **CNN model** to analyze lea
 
 # "Get Started" Button
 st.markdown("<div class='button-container'>", unsafe_allow_html=True)
-if st.button("🌱 Get Started"):
-    st.switch_page("Detection")  # Assuming there's a Detection page
+st.page_link("detect.py", label="🌱 Get Started")  # Assuming there's a Detection page
 st.markdown("</div>", unsafe_allow_html=True)
 
 # Footer
