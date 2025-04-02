@@ -128,7 +128,7 @@ except:
     st.write("Server Error")
 
 # Landing Page UI
-st.markdown("<h1 class='title'>🌿 Plant Disease Detection</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='title'>🌿 LeafScan</h1>", unsafe_allow_html=True)
 st.markdown("<h2 class='subtitle'>Identify plant diseases using deep learning</h2>", unsafe_allow_html=True)
 
 # Image Display
