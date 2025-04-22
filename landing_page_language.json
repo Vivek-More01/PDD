@@ -1,0 +1,72 @@
+{
+  "defaultLanguage": "en",
+  "en": {
+    "nav": {
+        "heading": "Navigation",
+      "detectDisease": "Detect Disease",
+      "aboutUs": "About Us",
+      "resources": "Resources & References",
+      "language":"Choose Language"
+    },
+    "placeholder": {
+      "askQuestion": "Ask a question about plants"
+    },
+    "title": {
+      "brand": "LeafScan",
+      "tagline": "Identify plant diseases using deep learning"
+    },
+    "caption": {
+      "upload": "Upload a leaf image to detect diseases"
+    },
+    "description": "This app uses a **CNN model** to analyze leaf images and detect plant diseases with high accuracy. Simply upload an image, and the model will provide insights about the plant’s health.",
+    "button": {
+      "getStarted": "Get Started"
+    }
+  },
+  "hi": {
+    "nav": {
+        "heading": "नेविगेशन",
+      "detectDisease": "रोग का पता लगाएँ",
+      "aboutUs": "हमारे बारे में",
+      "resources": "संसाधन एवं संदर्भ",
+      "language":"भाषा चुनें"
+    },
+    "placeholder": {
+      "askQuestion": "पौधों के बारे में प्रश्न पूछें"
+    },
+    "title": {
+      "brand": "लीफस्कैन",
+      "tagline": "डीप लर्निंग का उपयोग करके पौधों की बीमारियों की पहचान करें"
+    },
+    "caption": {
+      "upload": "बीमारियों का पता लगाने के लिए एक पत्ती की छवि अपलोड करें"
+    },
+    "description": "यह ऐप पत्ती की छवियों का विश्लेषण करने और उच्च सटीकता के साथ पौधों की बीमारियों का पता लगाने के लिए **CNN मॉडल** का उपयोग करता है। बस एक छवि अपलोड करें, और मॉडल पौधे के स्वास्थ्य के बारे में जानकारी प्रदान करेगा।",
+    "button": {
+      "getStarted": "शुरू करें"
+    }
+  },
+  "mr": {
+    "nav": {
+      "heading": "नेविगेशन",
+      "detectDisease": "रोग ओळखा",
+      "aboutUs": "आमच्याबद्दल",
+      "resources": "साधने आणि संदर्भ",
+      "language":"भाषा निवडा"
+    },
+    "placeholder": {
+      "askQuestion": "वनस्पतींबद्दल प्रश्न विचारा"
+    },
+    "title": {
+      "brand": "लीफस्कैन",
+      "tagline": "डीप लर्निंग वापरून वनस्पतींमधील रोग ओळखा"
+    },
+    "caption": {
+      "upload": "रोग ओळखण्यासाठी पानाची प्रतिमा अपलोड करा"
+    },
+    "description": "हे अॅप पानाच्या प्रतिमा विश्लेषित करण्यासाठी आणि उच्च अचूकतेने वनस्पतींमधील रोग शोधण्यासाठी **CNN मॉडेल** वापरते. फक्त एक प्रतिमा अपलोड करा, आणि मॉडेल वनस्पतीच्या आरोग्याबद्दल माहिती देईल.",
+    "button": {
+      "getStarted": "सुरू करा"
+    }
+  }
+}

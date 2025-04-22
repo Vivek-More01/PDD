@@ -1,0 +1,90 @@
+{
+  "defaultLanguage": "en",
+  "en": {
+    "nav": {
+      "header": "Navigation",
+      "home": "Home",
+      "aboutUs": "About Us",
+      "resources": "Resources & References"
+    },
+    "sidebar": {
+      "modelLabel": "Model",
+      "languageLabel": "Language",
+      "modelOptions": {
+        "MobileNetV2FT": "MobileNetV2FT"
+      }
+    },
+    "search": {
+      "askQuestion": "Ask a question about plants"
+    },
+    "detectionPage": {
+      "title": "Plant Disease Detection",
+      "subtitle": "Capture a clean image for the plant disease detection"
+    },
+    "uploadSection": {
+      "sectionLabel": "Upload a leaf image",
+      "dropText": "Drag and drop file here",
+      "limitText": "Limit 200MB per file · JPG, PNG, JPEG",
+      "browseButton": "Browse files",
+      "instruction": "Upload an image to get started!"
+    }
+  },
+  "hi": {
+    "nav": {
+      "header": "नेविगेशन",
+      "home": "होम",
+      "aboutUs": "हमारे बारे में",
+      "resources": "संसाधन एवं संदर्भ"
+    },
+    "sidebar": {
+      "modelLabel": "मॉडल",
+      "languageLabel": "भाषा",
+      "modelOptions": {
+        "MobileNetV2FT": "MobileNetV2FT"
+      }
+    },
+    "search": {
+      "askQuestion": "पौधों के बारे में प्रश्न पूछें"
+    },
+    "detectionPage": {
+      "title": "पौधों की बीमारी का पता लगाना",
+      "subtitle": "पौधों की बीमारी का पता लगाने के लिए एक साफ छवि कैप्चर करें"
+    },
+    "uploadSection": {
+      "sectionLabel": "एक पत्ती की छवि अपलोड करें",
+      "dropText": "फ़ाइल को यहां खींचें और छोड़ें",
+      "limitText": "प्रति फ़ाइल सीमा 200MB · JPG, PNG, JPEG",
+      "browseButton": "फ़ाइलें ब्राउज़ करें",
+      "instruction": "शुरू करने के लिए एक छवि अपलोड करें!"
+    }
+  },
+  "mr": {
+    "nav": {
+      "header": "नेव्हिगेशन",
+      "home": "मुख्य पृष्ठ",
+      "aboutUs": "आमच्याबद्दल",
+      "resources": "साधने आणि संदर्भ"
+    },
+    "sidebar": {
+      "modelLabel": "मॉडेल",
+      "languageLabel": "भाषा",
+      "modelOptions": {
+        "MobileNetV2FT": "MobileNetV2FT"
+      }
+    },
+    "search": {
+      "askQuestion": "वनस्पतींबद्दल प्रश्न विचारा"
+    },
+    "detectionPage": {
+      "title": "वनस्पती रोग शोध",
+      "subtitle": "वनस्पती रोग शोधण्यासाठी स्वच्छ प्रतिमा कॅप्चर करा"
+    },
+    "uploadSection": {
+      "sectionLabel": "पानाची प्रतिमा अपलोड करा",
+      "dropText": "फाईल येथे ड्रॅग आणि ड्रॉप करा",
+      "limitText": "प्रति फाईल मर्यादा 200MB · JPG, PNG, JPEG",
+      "browseButton": "फाईल ब्राऊझ करा",
+      "instruction": "सुरू करण्यासाठी प्रतिमा अपलोड करा!"
+    }
+  }
+}
