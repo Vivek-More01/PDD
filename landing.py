@@ -1,6 +1,7 @@
 import streamlit as st
 from google import genai
 import json as js
+import time
 
 client = genai.Client(api_key="AIzaSyB1MSHiCCh0G5Nbxk49LQJUWUcaCzVFSE8")
 with open("landing_page_language.json", "r", encoding="utf-8") as f:
@@ -149,6 +150,7 @@ st.sidebar.selectbox(
     format_func=lambda k: lang_labels[k],
     key="lang",
 )
+time.sleep(0.2)  # Optional: Add a small delay for better UX
 
 chat = client.chats.create(model="gemini-2.0-flash", config= genai.types.GenerateContentConfig(system_instruction= f"Answer the question about plants and plant diseases in a simple and precise manner. If the question is not about plants, plant diseases or agriculture, say that you are unable to answer that question. Answer in the language {lang_labels[st.session_state.lang]}", max_output_tokens=1000, temperature=0.05))
 question = st.text_input(label=t("placeholder.askQuestion"), value="", max_chars=200, key="question", type="default", help="Click to get an answer about questions") 
