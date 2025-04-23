@@ -28,7 +28,7 @@ def t(key_path: str) -> str:
 #Input for model
 def model_predictions(test_image, model1):
     model = tf.keras.models.load_model(models[model1])
-    input_image = tf.keras.preprocessing.image.load_img(test_image, target_size=(224, 224))
+    input_image = tf.keras.preprocessing.image.load_img(test_image, target_size=(128, 128))
     if model1 in ["MobileNetV2FT", "ResNet50"]:
         #Resizing image to 256x256
         input_image = tf.image.resize(input_image, (256,256))
