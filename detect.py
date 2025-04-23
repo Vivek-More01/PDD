@@ -6,7 +6,7 @@ from google import genai
 
 client = genai.Client(api_key="AIzaSyB1MSHiCCh0G5Nbxk49LQJUWUcaCzVFSE8")
 
-models = {"MobileNetV2FT": "PPD_MobileNetV2_FT.keras","MNV_Plant_Village":"Plant_Disease_Model_PlantVillageAugmented.keras","MobileNet":"Plant_Disease_Model.keras"}
+models = {"MobileNetV2FT": "PPD_MobileNetV2_FT.keras","MobileNet":"Plant_Disease_Model.keras"}
 
 with open("DetectionPage_language.json", "r", encoding="utf-8") as f:
     translations = js.load(f)
@@ -29,7 +29,7 @@ def t(key_path: str) -> str:
 def model_predictions(test_image, model1):
     model = tf.keras.models.load_model(models[model1])
     input_image = tf.keras.preprocessing.image.load_img(test_image, target_size=(128, 128))
-    if model1 in ["MobileNetV2FT", "ResNet50"]:
+    if model1 in ["MobileNetV2FT"]:
         #Resizing image to 256x256
         input_image = tf.image.resize(input_image, (256,256))
     else:
@@ -169,7 +169,7 @@ class_names_PV =["Apple___Apple_scab","Apple___Black_rot", "Apple___Cedar_apple_
 st.title(t("detectionPage.title"))
 st.write(t("detectionPage.subtitle"))
 
-model = st.sidebar.selectbox("Model", ["MobileNetV2FT","MNV_Plant_Village","MobileNet"], index=2, format_func=lambda x: models[x], key="model")
+model = st.sidebar.selectbox("Model", ["MobileNetV2FT","MobileNet"], index=1, format_func=lambda x: models[x], key="model")
 lang_labels = {
     "en": "English",
     "hi": "हिन्दी",
