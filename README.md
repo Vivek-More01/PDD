@@ -1,4 +1,4 @@
-Prototype CNN model has been completed
+CNN model has been completed
 
 In order to run online:
 1. Open a notebook in colab
